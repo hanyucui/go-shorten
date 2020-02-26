@@ -95,7 +95,9 @@ func createStorageFromOption(opts *Options) (storage.NamedStorage, error) {
 				return nil, errors.Wrapf(err, "failed to cli parse sub argument #%d", i)
 			}
 
+            fmt.Printf("creating from: %v\n", subOpt)
 			store, err := createStorageFromOption(&subOpt)
+            fmt.Printf("%+v -- %+v\n", store, err)
 			if err != nil {
 				return nil, errors.Wrapf(err, "failed to create storage #%d from args", i)
 			}
