@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net"
 	"net/http"
@@ -18,6 +19,8 @@ func main() {
 	if _, err := flags.Parse(&opts); err != nil {
 		return
 	}
+
+	fmt.Printf("%+v\n", opts)
 
 	store, err := createStorageFromOption(&opts)
 	if err != nil {
