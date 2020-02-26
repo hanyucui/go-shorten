@@ -1,6 +1,6 @@
-[![GoDoc](https://godoc.org/github.com/thomaso-mirodin/go-shorten?status.svg)](http://godoc.org/github.com/thomaso-mirodin/go-shorten)
-[![Go Report Card](https://goreportcard.com/badge/github.com/thomaso-mirodin/go-shorten)](https://goreportcard.com/report/github.com/thomaso-mirodin/go-shorten)
-[![license](http://img.shields.io/badge/license-MIT-red.svg?style=flat)](https://raw.githubusercontent.com/thomaso-mirodin/go-shorten/master/LICENSE)
+[![GoDoc](https://godoc.org/github.com/hanyucui/go-shorten?status.svg)](http://godoc.org/github.com/thomaso-mirodin/go-shorten)
+[![Go Report Card](https://goreportcard.com/badge/github.com/hanyucui/go-shorten)](https://goreportcard.com/report/github.com/thomaso-mirodin/go-shorten)
+[![license](http://img.shields.io/badge/license-MIT-red.svg?style=flat)](https://raw.githubusercontent.com/hanyucui/go-shorten/master/LICENSE)
 
 ## go-shorten: URL Shortener Service
 
