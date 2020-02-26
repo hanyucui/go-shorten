@@ -37,6 +37,7 @@ func NewRegexFromList(redirects map[string]string) (*Regex, error) {
 func (r Regex) Load(ctx context.Context, short string) (string, error) {
 	// Regex intentionally doesn't do sanitization, each regex can have whatever flexability it wants
 
+    fmt.Printf("in Regex.LOad: %v\n", short)
 	for _, remap := range r.remaps {
 		if remap.Regex.MatchString(short) {
 			return remap.Regex.ReplaceAllString(short, remap.Replacement), nil
