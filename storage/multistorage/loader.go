@@ -1,6 +1,7 @@
 package multistorage
 
 import (
+	"fmt"
 	"context"
 
 	"github.com/pkg/errors"
@@ -15,7 +16,9 @@ func loadFirstFunc(ctx context.Context, short string, stores []storage.NamedStor
 		return "", ErrEmpty
 	}
 
+    fmt.Printf("\n")
 	for _, store := range stores {
+        fmt.Printf("%+v %s\n", store, short)
 		long, err := store.Load(ctx, short)
 		if err == storage.ErrShortNotSet {
 			continue
