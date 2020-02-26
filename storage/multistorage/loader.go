@@ -16,7 +16,8 @@ func loadFirstFunc(ctx context.Context, short string, stores []storage.NamedStor
 		return "", ErrEmpty
 	}
 
-    fmt.Printf("\n")
+    fmt.Printf("\n----\n")
+    fmt.Printf("%+v %s\n", stores)
 	for _, store := range stores {
         fmt.Printf("%+v %s\n", store, short)
 		long, err := store.Load(ctx, short)
