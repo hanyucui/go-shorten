@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"os"
 	"log"
 	"net"
 	"net/http"
@@ -16,6 +17,7 @@ import (
 var opts Options
 
 func main() {
+    fmt.Println("%+v", os.Args)
 	if _, err := flags.Parse(&opts); err != nil {
 		return
 	}
